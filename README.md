@@ -137,16 +137,15 @@ Estos puntos los presentarás en el `README.md`.
 
 Debe contener lo siguiente:
 
-* Un título con el nombre de tu proyecto.
-* Un resumen de 1 o 2 líneas de qué se trata tu proyecto.
-* La imagen final de tu proyecto.
+* Un título con el nombre de tu proyecto: mochilando juntos.
+* Un resumen de 1 o 2 líneas de qué se trata tu proyecto: Es una agencia de viajes donde los usuarios pueden comprar paquetes de viaje a su destino favorito.
+* La imagen final de tu proyecto:
 * Investigación UX:
   1. Explicar quiénes son los usuarios y los objetivos en relación con el
-    producto.
+    producto:Son aquellas personas que quieran viajar a un precio mas economico.
   2. Explicar cómo el producto soluciona los problemas/necesidades de dichos
-    usuarios.
+    usuarios: en mocheliando juntos encuentras destinos hermosos para conocer a un buen precio.
   3. Luego colocarás la foto de tu primer prototipo en papel.
-  4. Agregar un resumen del feedback recibido indicando las mejoras a realizar.
   5. Imagen del prototipo final.
 
 #### Visualmente (HTML y CSS)
@@ -314,3 +313,5 @@ Organización del Trabajo:
   esperamos que hagas todo eso desde este proyecto. Iremos profundizando poco a
   poco a lo largo del -_bootcamp_.
 * [Blog: cómo funciona el algoritmo de Luhn](http://www.quobit.mx/asi-funciona-el-algoritmo-de-luhn-para-generar-numeros-de-tarjetas-de-credito.html).
+
+//
