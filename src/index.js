@@ -52,6 +52,10 @@ document.getElementById("houston-texas").style.display ='block';
 document.getElementById("merida-vzla").style.display ='none';
 document.getElementById("sa-col").style.display ='none';
 document.getElementById("sanjcr").style.display ='none';
+document.getElementById("option2").style.display = 'none'
+document.getElementById("option3").style.display = 'none'
+document.getElementById("option4").style.display = 'none'
+document.getElementById("option1").style.display = 'none'
 });
 
 //opcion2(Merida-Venezuela)
@@ -60,6 +64,10 @@ document.getElementById("houston-texas").style.display='none';
 document.getElementById("merida-vzla").style.display='block';
 document.getElementById("sa-col").style.display='none';
 document.getElementById("sanjcr").style.display='none';
+document.getElementById("option2").style.display = 'none'
+document.getElementById("option3").style.display = 'none'
+document.getElementById("option4").style.display = 'none'
+document.getElementById("option1").style.display = 'none'
 });
 
 //opcion3(San Andres-Colombia)
@@ -68,6 +76,10 @@ document.getElementById("houston-texas").style.display='none';
 document.getElementById("merida-vzla").style.display='none';
 document.getElementById("sa-col").style.display='block';
 document.getElementById("sanjcr").style.display='none';
+document.getElementById("option2").style.display = 'none'
+document.getElementById("option3").style.display = 'none'
+document.getElementById("option4").style.display = 'none'
+document.getElementById("option1").style.display = 'none'
 });
 
 //opcion4(San Jose Costa Rica)
@@ -76,6 +88,10 @@ document.getElementById("houston-texas").style.display='none';
 document.getElementById("merida-vzla").style.display='none';
 document.getElementById("sa-col").style.display='none';
 document.getElementById("sanjcr").style.display='block';
+document.getElementById("option2").style.display = 'none'
+document.getElementById("option3").style.display = 'none'
+document.getElementById("option4").style.display = 'none'
+document.getElementById("option1").style.display = 'none'
 });
 
 // bloque para ingresar el codigo de la tarjeta

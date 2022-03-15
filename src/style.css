@@ -125,16 +125,21 @@
  margin: 40px 0 0 0;
 
  
- /* border: 5px solid greenyellow; */
+  border: 5px solid greenyellow; 
 }
-
-
-
+ /*Vista de los destinos */
 .text-paragraph {
     font-size: 25px;
     margin-left: 22%;
     color: #10177E;
+}
 
+.destination-houston {
+    border: 5px solid black;
+}
+
+.title-houston {
+   margin: 0  0 5% 40%;
 }
 
 .input-validator {
