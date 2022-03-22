@@ -125,7 +125,7 @@
  margin: 40px 0 0 0;
 
  
-  border: 5px solid greenyellow; 
+  /*border: 5px solid greenyellow; */
 }
  /*Vista de los destinos */
 .text-paragraph {
@@ -134,19 +134,17 @@
     color: #10177E;
 }
 
-.destination-houston {
-    border: 5px solid black;
-}
 
 .title-houston {
    margin: 0  0 5% 40%;
+   color:#10177E;
 }
 
 .img-distanation {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 50px;
-    border: 5px solid yellowgreen;
+    /* border: 5px solid yellowgreen;*/
 }
 
 .img-distanation img {
@@ -162,22 +160,45 @@
      filter: drop-shadow(0 20px 20px);
 }
 
+.note-destinatio {
+    margin-left: 20%;
+    font-size: 20px;
+    color: #10177E 
+}
+
 .destination-description {
     display: flex; 
-    align-content: center;
+    flex-wrap:wrap;
     font-size: 20px;
-    margin: 10px 0 20px 0;
-    border: 5px solid slateblue;
+    margin: 20px 30px 30px 45px;
+    color: #525EC2 ;
+    /* border: 5px solid slateblue; */
+    justify-content: center;
 
 }
+
+.destination-description {
+    color: #10177E ;
+}
+ 
 
 .validator-button {
-    padding: 3px ;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 200px;
+    height: 50px;
+    margin-left: 40%;
     text-decoration: none;
     cursor: pointer;
-    background-color: #BEC9F0;
-    border: 5px solid purple;
+    font-size: 20px;
+    padding: 15px 0 40px 48px;
+    background-color: #EFF0F9  ;
+    border: 1px solid #10177E;
+    border-radius: 10px;
+    color: #10177E;
 }
+
 
 .input-validator {
     display: none;
