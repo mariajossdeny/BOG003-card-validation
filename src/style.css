@@ -8,6 +8,7 @@
      padding: 0;
 }
 
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -19,20 +20,25 @@
  margin-left: 38%;
  color: #10177E;
 
+
 }
 
-/* Slider de fotografias */ 
+
+/* Slider de fotografias */
+
 
 .container-slider {
     width: 100%;
     max-width: 1500px;
     margin: auto;
     overflow: hidden;
-    
+   
     /*border: 5px solid green;*/
-    
+   
+
 
 }
+
 
  .slider {
     display: flex;
@@ -42,10 +48,12 @@
    
 }
 
+
 .slider-section {
     width: 100%;
     /*border: 5px solid #10177E; */
-} 
+}
+
 
  .slider img {
     display: block;
@@ -53,9 +61,11 @@
     height: 380px;
     object-fit: cover;
     /*border: 5px solid yellow; */
-    
+   
 
-} 
+
+}
+
 
 .slider__btn {
     position: absolute;
@@ -72,19 +82,24 @@
     cursor: pointer;
 }
 
+
 .slider__btn--right {
     right: 10px;
 }
+
 
 .slider__btn--left {
     left: 10px;
 }
 
+
 /* Seccion para elegir el destino*/
+
 
 /* .container-destination {
     border: 5px solid red;
 } */
+
 
 .destination-city { /*HIJO */
     width: 40%;
@@ -96,6 +111,7 @@
    /* border: 5px solid yellow; */
 }
 
+
 .destination-city img {
     width: 200px;
     height: 200px;
@@ -103,11 +119,13 @@
     object-fit: cover;
 }
 
+
 .destination-city:hover img{
    transform: rotate(0) scale(1.1) translateZ(0);
   -webkit-filter: drop-shadow(0 20px 20px  #10177E);
   filter: drop-shadow(0 20px 20px #10177E);
 }
+
 
 .destination-city p {
     font-size: 20px;
@@ -117,12 +135,14 @@
     margin: 25px 0 0 0;
 }
 
+
 .destination { /* PAPA*/
  display: flex;
  justify-content: space-evenly;
  flex-wrap: wrap;
  row-gap: 5px;
  margin: 40px 0 0 0;
+
 
  
   /*border: 5px solid greenyellow; */
@@ -135,10 +155,13 @@
 }
 
 
+
+
 .title-city {
    margin: 0  0 5% 40%;
    color:#10177E;
 }
+
 
 .img-distanation {
     display: flex;
@@ -147,6 +170,7 @@
     /* border: 5px solid yellowgreen;*/
 }
 
+
 .img-distanation img {
     width: 250px;
     height: 250px;
@@ -154,24 +178,28 @@
     object-fit: cover;
 }
 
+
 .img-distanation:hover img {
     transform: rotate(0) scale(1.1) translateZ(0);
     -webkit-filter: drop-shadow(0 20px 20px);
      filter: drop-shadow(0 20px 20px);
 }
 
+
 .note-destinatio {
     margin-left: 20%;
     font-size: 20px;
-    color: #10177E 
+    color: #10177E
 }
+
 
 .merida {
     margin-left: 35%;
 }
 
+
 .destination-description {
-    display: flex; 
+    display: flex;
     flex-wrap:wrap;
     font-size: 20px;
     margin: 20px 30px 30px 45px;
@@ -179,16 +207,20 @@
     /* border: 5px solid slateblue; */
     justify-content: center;
 
+
 }
+
 
 .destination-description {
     color: #10177E ;
 }
 
+
 .one-merida {
     margin-left: -4%;
 }
  
+
 
 .validator-button {
     display: flex;
@@ -208,6 +240,14 @@
 }
 
 
-.input-validator {
-    display: none;
+.validator-button:hover {
+    transform: rotate(0) scale(1.1) translateZ(0);
+  -webkit-filter: drop-shadow(0 20px 20px  #10177E);
+  filter: drop-shadow(0 20px 20px #10177E);
 }
+
+
+/*
+input-validator {
+    display: none;
+} */

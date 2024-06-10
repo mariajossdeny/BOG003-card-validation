@@ -1,3 +1,6 @@
+/*
+
+
 const validator = {
   isValid:(creditCardNumber) => {
    let sumNumber = 0;
@@ -15,8 +18,11 @@ const validator = {
       creditCardNumber[i] = parseInt(sumNumber[0]) + parseInt(sumNumber[1]);
       //console.log("suma" + creditCardNumber);
 
+
           //console.log( "el valor" + creditCardNumber[i] );
         }
+
+
 
 
     //  console.log(" position "+i+" :value "+creditCardNumber[i]);
@@ -26,8 +32,10 @@ const validator = {
   }
    let validCard= totalSum % 10 === 0 ? true: false ;
 
+
     return validCard;
   },
+
 
   maskify:(creditCardNumber) => {
     if (creditCardNumber.length > 4){
@@ -36,8 +44,13 @@ const validator = {
       return "#".repeat(quantity)+creditCardNumber.substr(-4);
       }
 
+
   }
 
-};
+
+};*/
+
 
 export default validator;
+
+
