@@ -1,6 +1,7 @@
 import validator from './validator.js';
 
 
+
 /* Funcion para la galeria de fotos */
  const slider = document.querySelector("#slider");
  let sliderSection = document.querySelectorAll(".slider-section");
@@ -65,7 +66,7 @@ document.getElementById("option2").style.display = 'none'
 document.getElementById("option3").style.display = 'none'
 document.getElementById("option4").style.display = 'none'
 document.getElementById("option1").style.display = 'none'
-//document.getElementById("validator").style.display = 'none'
+//document.getElementById("section-card").style.display = 'none'
 });
 
 
@@ -79,7 +80,7 @@ document.getElementById("option2").style.display = 'none';
 document.getElementById("option3").style.display = 'none';
 document.getElementById("option4").style.display = 'none';
 document.getElementById("option1").style.display = 'none';
-//document.getElementById("validator").style.display = 'none';
+//document.getElementById("section-card").style.display = 'none'
 });
 
 
@@ -93,7 +94,7 @@ document.getElementById("option2").style.display = 'none';
 document.getElementById("option3").style.display = 'none';
 document.getElementById("option4").style.display = 'none';
 document.getElementById("option1").style.display = 'none';
-//document.getElementById("validator").style.display = 'none';
+//document.getElementById("section-card").style.display = 'none';
 });
 
 
@@ -107,7 +108,7 @@ document.getElementById("option2").style.display = 'none';
 document.getElementById("option3").style.display = 'none';
 document.getElementById("option4").style.display = 'none';
 document.getElementById("option1").style.display = 'none';
-// document.getElementById("validator").style.display = 'none';
+document.getElementById("section-card").style.display = 'none'
 });
 
 
@@ -120,6 +121,7 @@ document.querySelectorAll(".reservation-button").forEach(button => {
       document.getElementById("sa-col").style.display='none';
       document.getElementById("sanjcr").style.display='none';
       document.getElementById("validator-section").style.display = 'block';
+      document.getElementById("section-card").style.display = 'block'
       console.log("hi carambola")
    })
 })
@@ -154,17 +156,22 @@ document.querySelectorAll(".reservation-button").forEach(button => {
 
 // bloque para ingresar el codigo de la tarjeta
 
+let cardNumber = document.getElementById("numbercar"); 
+ //console.log(creditCardNumber)
+let carBtn = document.getElementById("sendcardend")
 
-/*
-let carBtn = document.getElementById("car");
-let crediNumber = document.getElementById("validator");
+//let carBtn = document.getElementById("");
+//let crediNumber = document.getElementById("numbercar");
  carBtn.addEventListener("click",() => {
-    if (validator.isValid(crediNumber.value)) {
-    alert("tu tarjeta es valida" + validator.maskify(crediNumber.value));
-       } else {
-    alert("tu tarjeta es invalida" + validator.maskify(crediNumber.value));
+ console.log("hi")
+
+ console.log(validator.isValid(cardNumber.value))
+    if(validator.isValid(cardNumber.value)) {
+   alert("tu tarjeta es valida" + validator.maskify(cardNumber.value));
+      } else{
+       alert("tu tarjeta es invalida" + validator.maskify(cardNumber.value));
   }
 
 
-})
-*/
+ }
+)

@@ -132,12 +132,32 @@
 
 
  <!--boton para validar la tarjeta -->
- <div id="validator-section">
-   <section class="input-validator" id="validator" hidden>
-      <input type="text">
-      <button id="car">validar</button>
-   </section>
-</div>
+ <div id="validator-section" class="container-validator">
+    <section class="input-validator" id="validator" hidden>
+        <input type="text">
+        <button id="car">validar</button>
+    </section>
+
+    <div id="section-card"  class="input-card" hidden>
+
+      <form action="" class="form-card">
+
+        <label for="name"> Name
+         <input type="text" id="name" name="name" placeholder="Juan">
+        </label>
+
+        <label for="lastname"> Last Name
+         <input type="text" id="lastname" name="lastname" placeholder="Gomez">
+        </label>
+
+        <label for="numbercar">Card number
+           <input type="text"  id="numbercar" name="numbercar"  placeholder=" **** **** **** 2819" maxlength="16" max="16">
+        </label>
+
+        <input type="submit" value="Validar" class="sendcard" id="sendcardend">
+      </form>
+    </div>
+ </div>
 
 
 
