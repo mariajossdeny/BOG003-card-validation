@@ -67,6 +67,7 @@ document.getElementById("option3").style.display = 'none'
 document.getElementById("option4").style.display = 'none'
 document.getElementById("option1").style.display = 'none'
 //document.getElementById("section-card").style.display = 'none'
+//document.getElementById("modal-containeID").style.display = 'none';
 });
 
 
@@ -81,6 +82,7 @@ document.getElementById("option3").style.display = 'none';
 document.getElementById("option4").style.display = 'none';
 document.getElementById("option1").style.display = 'none';
 //document.getElementById("section-card").style.display = 'none'
+//document.getElementById("modal-containeID").style.display = 'none';
 });
 
 
@@ -95,6 +97,7 @@ document.getElementById("option3").style.display = 'none';
 document.getElementById("option4").style.display = 'none';
 document.getElementById("option1").style.display = 'none';
 //document.getElementById("section-card").style.display = 'none';
+//document.getElementById("modal-containeID").style.display = 'none';
 });
 
 
@@ -109,6 +112,7 @@ document.getElementById("option3").style.display = 'none';
 document.getElementById("option4").style.display = 'none';
 document.getElementById("option1").style.display = 'none';
 document.getElementById("section-card").style.display = 'none'
+//document.getElementById("modal-containeID").style.display = 'none';
 });
 
 
@@ -123,6 +127,7 @@ document.querySelectorAll(".reservation-button").forEach(button => {
       document.getElementById("validator-section").style.display = 'block';
       document.getElementById("section-card").style.display = 'block'
       console.log("hi carambola")
+     // document.getElementById("modal-containeID").style.display = 'none';
    })
 })
 
@@ -156,22 +161,65 @@ document.querySelectorAll(".reservation-button").forEach(button => {
 
 // bloque para ingresar el codigo de la tarjeta
 
-let cardNumber = document.getElementById("numbercar"); 
- //console.log(creditCardNumber)
-let carBtn = document.getElementById("sendcardend")
+let cardNumber = document.getElementById("numbercar"); //Input del valor de la tarjeta.
+ //console.log(cardNumber)
+let carBtn = document.getElementById("sendcardend");  // Boton para validar la tarjta.
+let modalContainer = document.querySelectorAll(".modal-container")[0];
+let modal = document.querySelectorAll(".modal")[0]
+let btnCloseModal = document.querySelectorAll(".close")[0];
 
 //let carBtn = document.getElementById("");
 //let crediNumber = document.getElementById("numbercar");
- carBtn.addEventListener("click",() => {
- console.log("hi")
+ carBtn.addEventListener("click",(e) => {
+   console.log("test")
+   e.preventDefault();
+   modalContainer.style.opacity = "1"; 
+   modalContainer.style.visibility = "visible";
+   modal.classList.toggle("modal-close");
 
- console.log(validator.isValid(cardNumber.value))
+   
+  let nameUser = document.getElementById("name").value  // Input para escribir el nombre de la persona. 
+   let lastNameUser = document.getElementById("lastname").value //Input para escribir su apellido.
+ //console.log(validator.isValid(cardNumber.value))
+
+
     if(validator.isValid(cardNumber.value)) {
-   alert("tu tarjeta es valida" + validator.maskify(cardNumber.value));
+     // console.log(nameUser + " " + lastNameUser + " " + "tu tarjeta es valida" + validator.maskify(cardNumber.value))
+      let resultValid = document.getElementById("validator.texto");
+      let resultValidNumber = document.getElementById("validator.number")
+      resultValid.innerHTML = nameUser + " " + lastNameUser + " " + "tu tarjeta es valida"
+      resultValidNumber.innerHTML = validator.maskify(cardNumber.value);
+  // alert(  nameUser + " " + lastNameUser + " " + "tu tarjeta es valida" + validator.maskify(cardNumber.value));
       } else{
-       alert("tu tarjeta es invalida" + validator.maskify(cardNumber.value));
+         //console.log(nameUser + " " + lastNameUser + " " + "tu tarjeta es invalida" + validator.maskify(cardNumber.value))
+         let resultInValid = document.getElementById("validator.texto");
+         let resultInValidNumber = document.getElementById("validator.number")
+          resultInValid.innerHTML = nameUser + " " + lastNameUser + " " + "tu tarjeta es invalida"
+          resultInValidNumber.innerHTML = validator.maskify(cardNumber.value);
+    //   alert( nameUser + " " + lastNameUser + " " +  "tu tarjeta es invalida" + validator.maskify(cardNumber.value));
   }
 
-
- }
+ 
+}
 )
+
+btnCloseModal.addEventListener("click", () => {
+  modal.classList.toggle("modal-close"); 
+  setTimeout(function(){
+   modalContainer.style.opacity = "0";
+   modalContainer.style.visibility= "hidden";
+
+  }, 600)
+})
+
+window.addEventListener("click", (e) => {
+   if(e.target === modalContainer){
+      modal.classList.toggle("modal-close"); 
+      setTimeout(function(){
+       modalContainer.style.opacity = "0";
+       modalContainer.style.visibility= "hidden";
+    
+      }, 600)
+   }
+
+}) 
