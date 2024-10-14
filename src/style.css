@@ -365,26 +365,38 @@
    -webkit-filter: drop-shadow(0 20px 20px  #10177E);
     filter: drop-shadow(0 20px 20px #10177E);
 }
-
 .close {
     position: absolute;
+    margin-right: 12px;
+    margin-top: 10px;
     top: 5px;
     right: 5px;
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     line-height: 25px;
     cursor: pointer;
     background-color: #EFF0F9  ;
     border: 1px solid #10177E;
-    border-radius: 10px;
+    border-radius: 14px;
     color: #10177E; 
+    padding: 2px 1px 0 4px;
+    font-family: "Mukta", sans-serif;
+} 
 
+.msj-answer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    
 }
 
 .validation-text {
     font-size: 20px;
     color: #10177E;
+    font-family: "Mukta", sans-serif;
+    padding: 8px;
+
 
 }
 

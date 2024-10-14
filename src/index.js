@@ -153,12 +153,6 @@ document.querySelectorAll(".reservation-button").forEach(button => {
 //})
 
 
-
-
-
-
-
-
 // bloque para ingresar el codigo de la tarjeta
 
 let cardNumber = document.getElementById("numbercar"); //Input del valor de la tarjeta.
@@ -188,14 +182,14 @@ let btnCloseModal = document.querySelectorAll(".close")[0];
       let resultValid = document.getElementById("validator.texto");
       let resultValidNumber = document.getElementById("validator.number")
       resultValid.innerHTML = nameUser + " " + lastNameUser + " " + "tu tarjeta es valida"
-      resultValidNumber.innerHTML = validator.maskify(cardNumber.value);
+      resultValidNumber.innerHTML = validator.maskify(cardNumber.value.trim());
   // alert(  nameUser + " " + lastNameUser + " " + "tu tarjeta es valida" + validator.maskify(cardNumber.value));
       } else{
          //console.log(nameUser + " " + lastNameUser + " " + "tu tarjeta es invalida" + validator.maskify(cardNumber.value))
          let resultInValid = document.getElementById("validator.texto");
          let resultInValidNumber = document.getElementById("validator.number")
           resultInValid.innerHTML = nameUser + " " + lastNameUser + " " + "tu tarjeta es invalida"
-          resultInValidNumber.innerHTML = validator.maskify(cardNumber.value);
+          resultInValidNumber.innerHTML = validator.maskify(cardNumber.value.trim());
     //   alert( nameUser + " " + lastNameUser + " " +  "tu tarjeta es invalida" + validator.maskify(cardNumber.value));
   }
 
@@ -223,3 +217,6 @@ window.addEventListener("click", (e) => {
    }
 
 }) 
+
+
+   
